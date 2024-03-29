@@ -15,7 +15,7 @@ pipeline {
 
     stage('bisect run') {
       steps {
-        sh 'git bisect run ./q3.sh'
+        sh 'git bisect run mvn clean test'
       }
     }
 
